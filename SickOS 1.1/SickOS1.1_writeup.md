@@ -40,12 +40,20 @@ To find IP address of VM:
 
 > Logged in
 
-#### Added ip and port to php Reverse shell
+#### Add IP and port to php Reverse shell
 ![](Assets/6.png)
+
+> Added my own IP and random port
+
+#### Shell upload
+![](Assets/7.png)
 
 > Uploaded php reverse shell
 
-Nc -nvlp 1234 & visited url of shell >> got shell
+#### Nc -nvlp 1234 & visited url of shell
+![](Assets/8.png)
+
+> got reverse shell
 
 Visited var/www
 
