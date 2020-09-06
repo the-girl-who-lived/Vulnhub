@@ -76,9 +76,11 @@ To find IP address of VM:
 #### Nc -nvlp 7777
 ![](Assets/13.png)
 
-Method 2: using config.php
+> Got root
 
-config.php
+### Method 2: Using config.php
+
+#### config.php
 ![](Assets/14.png)
 ![](Assets/15.png)
 
