@@ -35,7 +35,7 @@ To find IP address of VM:
 
 > Wolfcms directory
 
-#### Login page >> Admin:admin
+#### Login page >> admin:admin
 ![](Assets/5.png)
 
 > Logged in
@@ -43,24 +43,24 @@ To find IP address of VM:
 #### Add IP and port to php Reverse shell
 ![](Assets/6.png)
 
-> Added my own IP and random port
+> Added my own IP and port
 
 #### Shell upload
 ![](Assets/7.png)
 
 > Uploaded php reverse shell
 
-#### Nc -nvlp 1234 & visited url of shell
+#### Nc -nvlp 4444 & visited url of shell
 ![](Assets/8.png)
 
 > got reverse shell
 
-Visited var/www
+#### Visit /var/www/
+![](Assets/9.png)
 
+### Method 1: Using connect.py
 
-Method 1: Using connect.py
-
-Rw permissions for connect.py. Visit cron.d
+#### Rw permissions for connect.py >> Visit cron.d
 
 Create payload with msfvenum 
 
