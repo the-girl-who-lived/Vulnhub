@@ -28,12 +28,12 @@ To find IP address of VM:
 #### Nikto: Nikto -h 192.168.1.11 -useproxy 192.168.1.11:3128 
 ![](Assets/3.png)
 
-> /cgi-bin/status > vulnerable to ShellShock
+> /cgi-bin/status > vulnerable to `ShellShock`
 
 #### Burp proxy 192.168.1.11 : 3128  >> 192.168.1.11/robots.txt
 ![](Assets/4.png)
 
-> Wolfcms directory
+> `Wolfcms` directory
 
 #### Login page >> admin:admin
 ![](Assets/5.png)
@@ -58,16 +58,23 @@ To find IP address of VM:
 #### Visit /var/www/
 ![](Assets/9.png)
 
+> `Wolfcms` directory and Read n Write permissions for `connect.py`
+
 ### Method 1: Using connect.py
 
-#### Rw permissions for connect.py >> Visit cron.d
+#### Visit cron.d
+![](Assets/10.png)
 
-Create payload with msfvenum 
+> Automated connect.py
 
-Echo payload to connect.py
+#### Create payload with msfvenum 
+![](Assets/11.png)
 
-Nc -nvlp 7777
+#### Echo payload to connect.py
+![](Assets/12.png)
 
+#### Nc -nvlp 7777
+![](Assets/13.png)
 
 Method 2: using config.php
 
