@@ -1,7 +1,7 @@
 Sudo Netdiscover
 
 ![GitHub Logo](/Assets/1.png)
-Format: ![Alt Text](url)
+Format: ![Alt Text](https://github.com/the-girl-who-lived/Vulnhub/blob/master/SickOS%201.1/Assets/1.png)
 
 Nmap -sC -sV -Pn -p- -A 192.168.1.11
 
