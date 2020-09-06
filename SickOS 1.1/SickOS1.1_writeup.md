@@ -30,14 +30,20 @@ To find IP address of VM:
 
 > /cgi-bin/status > vulnerable to ShellShock
 
-#### Burp proxy 192.168.1.11 : 3128  >>>> 192.168.1.11/robots.txt
+#### Burp proxy 192.168.1.11 : 3128  >> 192.168.1.11/robots.txt
 ![](Assets/4.png)
 
-Admin:admin
+> Wolfcms directory
 
-Added ip and port to php Reverse shell
+#### Login page >> Admin:admin
+![](Assets/5.png)
 
-Uploaded php reverse shell
+> Logged in
+
+#### Added ip and port to php Reverse shell
+![](Assets/6.png)
+
+> Uploaded php reverse shell
 
 Nc -nvlp 1234 & visited url of shell >> got shell
 
