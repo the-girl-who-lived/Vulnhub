@@ -1,3 +1,16 @@
+## SickOs 1.1 VulnHub VM walkthrough
+
+SickOs 1.1 by https://twitter.com/sayli_ambure
+
+Link: https://www.vulnhub.com/entry/sickos-11,132/
+
+```
+This CTF gives a clear analogy how hacking strategies can be performed on a network to compromise it in a safe environment. 
+This vm is very similar to labs I faced in OSCP. 
+The objective being to compromise the network/machine and gain Administrative/root privileges on them.
+```
+
+
 Sudo Netdiscover
 
 ![](Assets/1.png)
