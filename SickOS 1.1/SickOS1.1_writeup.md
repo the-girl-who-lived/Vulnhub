@@ -79,7 +79,8 @@ To find IP address of VM:
 Method 2: using config.php
 
 config.php
-
+![](Assets/14.png)
+![](Assets/15.png)
 
 
 Method 3: Get a shell using shellshock
