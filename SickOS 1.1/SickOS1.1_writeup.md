@@ -98,7 +98,7 @@ To find IP address of VM:
 ![](Assets/16.png)
 
 #### Searchsploit -m 34900.py
-![](Assets/17.png)
+
 
 > Downloaded shellshock exploit
 
