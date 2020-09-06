@@ -23,9 +23,10 @@ To find IP address of VM:
 #### Port scan
 ![](Assets/2.png)
 
-> Squid HTTP Proxy is running on port 3128 > Firefox Web proxy 192.168.1.11:3128 > web server found
+> Squid HTTP Proxy is running on port 3128 > Firefox Web proxy 192.168.1.11:3128 > Squid web server
  
-#### Nikto -h 192.168.1.11 -useproxy 192.168.1.11:3128
+#### Nikto: 
+>> Nikto -h 192.168.1.11 -useproxy 192.168.1.11:3128
 ![](Assets/3.png)
 
 Burp proxy 192.168.1.11 : 3128  >>>> 192.168.1.11/robots.txt
