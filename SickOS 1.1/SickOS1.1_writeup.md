@@ -12,8 +12,6 @@ The objective being to compromise the network/machine and gain Administrative/ro
 
 ## Solution
 
-To find IP address of VM:
-
 #### Sudo Netdiscover
 
 ![](Assets/1.png)
