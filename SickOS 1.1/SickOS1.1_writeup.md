@@ -10,14 +10,23 @@ This vm is very similar to labs I faced in OSCP.
 The objective being to compromise the network/machine and gain Administrative/root privileges on them.
 ```
 
+## Solution
 
-Sudo Netdiscover
+To find IP address of VM:
+
+#### Sudo Netdiscover
 
 ![](Assets/1.png)
 
-Nmap -sC -sV -Pn -p- -A 192.168.1.11
+> IP address: 192.168.1.11
 
- Nikto -h 192.168.1.11 -useproxy 192.168.1.11:3128
+#### Port scan
+![](Assets/2.png)
+
+> Squid HTTP Proxy is running on port 3128
+ 
+#### Nikto -h 192.168.1.11 -useproxy 192.168.1.11:3128
+![](Assets/3.png)
 
 Burp proxy 192.168.1.11 : 3128  >>>> 192.168.1.11/robots.txt
 
