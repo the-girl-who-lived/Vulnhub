@@ -20,18 +20,18 @@ To find IP address of VM:
 
 > IP address: 192.168.1.11
 
-#### Port scan
+#### Port scan: Nmap -sC -sV -Pn -p- -A 192.168.1.11
 ![](Assets/2.png)
 
 > Squid HTTP Proxy is running on port 3128 > Firefox Web proxy 192.168.1.11:3128 > Squid web server
  
-#### Nikto 
-Nikto -h 192.168.1.11 -useproxy 192.168.1.11:3128
+#### Nikto: Nikto -h 192.168.1.11 -useproxy 192.168.1.11:3128 
 ![](Assets/3.png)
 
 > /cgi-bin/status > vulnerable to ShellShock
 
 #### Burp proxy 192.168.1.11 : 3128  >>>> 192.168.1.11/robots.txt
+![](Assets/4.png)
 
 Admin:admin
 
