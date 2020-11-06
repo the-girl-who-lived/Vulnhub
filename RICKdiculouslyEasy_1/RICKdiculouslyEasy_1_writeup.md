@@ -21,12 +21,19 @@ It's designed to be a beginner ctf, if you're new to pen testing, check it out!
 ![](Assets/2.PNG)
 ![](Assets/2.1.PNG)
 > 21 -> ftp -> vsftpd 3.0.3 -> anonymous
+
 > 22 -> ssh
+
 > 80 -> Apache httpd 2.4.27
+
 > 9090 -> Cockpit webservice
+  
 > 13337 -> unknown
+  
 > flag (10 pt) => total 10 points
+  
 > 22222 -> ssh -> OpenSSH 7.5 (protocol 2.0)
+  
 > 60000 > unknown
 
 #### 3. Nikto: Nikto -h 192.168.1.10
