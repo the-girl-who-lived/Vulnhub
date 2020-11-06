@@ -39,11 +39,13 @@ It's designed to be a beginner ctf, if you're new to pen testing, check it out!
 #### 3. Nikto: Nikto -h 192.168.1.10
 ![](Assets/3.PNG)
 > passwords/ directory
+
 > icons/ directory
 
 #### 4. Browser > http://192.168.1.10/passwords/
 ![](Assets/4.PNG)
 > FLAG.txt
+
 > passwords.html
 
 #### 5. Browser > http://192.168.1.10/passwords/FLAG.txt
@@ -53,7 +55,7 @@ It's designed to be a beginner ctf, if you're new to pen testing, check it out!
 #### 6. Browser > http://192.168.1.10/passwords.html and page source code
 ![](Assets/6.PNG)
 ![](Assets/7.PNG)
-> password > winter
+> password -> winter
 
 #### 7. Browser > http://192.168.1.10/icons/
 ![](Assets/8.PNG)
@@ -62,6 +64,7 @@ It's designed to be a beginner ctf, if you're new to pen testing, check it out!
 #### 8. Browser > http://192.168.1.10/robots.txt
 ![](Assets/9.PNG)
 > /cgi-bin/root_shell.cgi
+
 > /cgi-bin/tracertool.cgi
 
 #### 9. Browser > view-source:http://192.168.1.10/cgi-bin/root_shell.cgi
@@ -96,8 +99,10 @@ It's designed to be a beginner ctf, if you're new to pen testing, check it out!
 #### 15. Try winter password for users found in step 11 via SSH on 22222 port
 ![](Assets/19.PNG)
 > Didn't work
+
 ![](Assets/20.PNG)
 > Worked for user 'Summer'
+
 > Got flag (10 pt) => total 50 points
 ![](Assets/21.PNG)
 > password for unzipping journal.txt.zip is in safe_password.jpg
@@ -110,7 +115,9 @@ It's designed to be a beginner ctf, if you're new to pen testing, check it out!
 ![](Assets/25.PNG)
 ![](Assets/26.PNG)
 > Used flag in journal.txt as argument for safe
+
 > Got next flag (20 pt) => total 90 points
+
 > Got Pattern for RickSanchez password
 
 #### 16. Create python script for all possible password combinations using the clue to feed Hydra:
