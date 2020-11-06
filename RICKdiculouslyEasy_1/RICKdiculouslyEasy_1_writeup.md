@@ -28,9 +28,7 @@ It's designed to be a beginner ctf, if you're new to pen testing, check it out!
 
 > 9090 -> Cockpit webservice
   
-> 13337 -> unknown
-  
-> flag (10 pt) => total 10 points
+> 13337 -> unknown -> flag (10 pt) => total 10 points
   
 > 22222 -> ssh -> OpenSSH 7.5 (protocol 2.0)
   
