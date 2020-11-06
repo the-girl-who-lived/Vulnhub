@@ -85,6 +85,7 @@ It's designed to be a beginner ctf, if you're new to pen testing, check it out!
 > logged in
 
 ![](Assets/9.PNG)
+![](Assets/9.1.PNG)
 > ftp://192.168.1.10 -> Flag.txt (10 pt) => total 30 points
 
 #### 13. ssh 192.168.1.10 22
