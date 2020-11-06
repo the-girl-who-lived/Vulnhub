@@ -14,7 +14,9 @@ It's designed to be a beginner ctf, if you're new to pen testing, check it out!
 ## Solution
 
 #### 1. Sudo Netdiscover
+
 ![](Assets/1.png)
+
 > IP address: 192.168.1.10
 
 #### 2. Port scan: Nmap -sC -sV -Pn -A -p- 192.168.1.10
