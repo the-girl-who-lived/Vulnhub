@@ -60,28 +60,30 @@ It's designed to be a beginner ctf, if you're new to pen testing, check it out!
 
 #### 8. Browser > http://192.168.1.10/robots.txt
 ![](Assets/11.PNG)
-> /cgi-bin/root_shell.cgi
+> Found /cgi-bin/root_shell.cgi
 
-> /cgi-bin/tracertool.cgi
+> Found /cgi-bin/tracertool.cgi
 
 #### 9. Browser > view-source:http://192.168.1.10/cgi-bin/root_shell.cgi
 ![](Assets/12.PNG)
-> nothing useful
+> Nothing useful
 
 #### 10. Browser > http://192.168.1.10/cgi-bin/tracertool.cgi
 ![](Assets/13.PNG)
 ![](Assets/14.PNG)
 > Vulnerable to command injection
+
 ![](Assets/15.PNG)
 > cat command doesn't work. Can use 'more', 'less','head' or 'tail' instead
 
-#### 11. Payload > ; more /etc/passwd
+#### 11. Payload -> ; more /etc/passwd
 ![](Assets/16.PNG)
 > Note users 'morty', 'ricksanchez' and 'summer'
 
 #### 12. Ftp 192.168.1.10 > anonymous:anonymous 
 ![](Assets/8.PNG)
 > logged in
+
 ![](Assets/9.PNG)
 > ftp://192.168.1.10 -> Flag.txt (10 pt) => total 30 points
 
@@ -103,12 +105,16 @@ It's designed to be a beginner ctf, if you're new to pen testing, check it out!
 > Got flag (10 pt) => total 50 points
 ![](Assets/21.PNG)
 > password for unzipping journal.txt.zip is in safe_password.jpg
+
 ![](Assets/22.PNG)
 > Pull jpg file in host machine
+
 ![](Assets/23.PNG)
 > Got safe password
+
 ![](Assets/24.PNG)
 > Got Flag (20 pt) => total 70 points
+
 ![](Assets/25.PNG)
 ![](Assets/26.PNG)
 > Used flag in journal.txt as argument for safe
