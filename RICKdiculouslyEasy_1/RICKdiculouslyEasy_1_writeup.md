@@ -38,55 +38,54 @@ It's designed to be a beginner ctf, if you're new to pen testing, check it out!
 
 #### 3. Nikto: Nikto -h 192.168.1.10
 ![](Assets/3.PNG)
-> passwords/ directory
+> Passwords/ directory
 
-> icons/ directory
+> Icons/ directory
 
 #### 4. Browser > http://192.168.1.10/passwords/
-![](Assets/4.PNG)
+![](Assets/04.PNG)
 > FLAG.txt
 
 > passwords.html
 
 #### 5. Browser > http://192.168.1.10/passwords/FLAG.txt
-![](Assets/5.PNG)
+![](Assets/4.PNG)
 > Got Flag (10 pt) = total points 20
 
-#### 6. Browser > http://192.168.1.10/passwords.html and page source code
+#### 6. Browser > http://192.168.1.10/passwords.html page source code
 ![](Assets/6.PNG)
-![](Assets/7.PNG)
 > password -> winter
 
 #### 7. Browser > http://192.168.1.10/icons/
-![](Assets/8.PNG)
+![](Assets/7.PNG)
 > nothing special other than directory listing
 
 #### 8. Browser > http://192.168.1.10/robots.txt
-![](Assets/9.PNG)
+![](Assets/11.PNG)
 > /cgi-bin/root_shell.cgi
 
 > /cgi-bin/tracertool.cgi
 
 #### 9. Browser > view-source:http://192.168.1.10/cgi-bin/root_shell.cgi
-![](Assets/10.PNG)
+![](Assets/12.PNG)
 > nothing useful
 
 #### 10. Browser > http://192.168.1.10/cgi-bin/tracertool.cgi
-![](Assets/11.PNG)
-![](Assets/12.PNG)
-> Vulnerable to command injection
 ![](Assets/13.PNG)
+![](Assets/14.PNG)
+> Vulnerable to command injection
+![](Assets/15.PNG)
 > cat command doesn't work. Can use 'more', 'less','head' or 'tail' instead
 
 #### 11. Payload > ; more /etc/passwd
-![](Assets/14.PNG)
+![](Assets/16.PNG)
 > Note users 'morty', 'ricksanchez' and 'summer'
 
 #### 12. Ftp 192.168.1.10 > anonymous:anonymous 
-![](Assets/15.PNG)
+![](Assets/8.PNG)
 > logged in
-![](Assets/16.PNG)
-> ftp://192.168.1.10 > Flag.txt (10 pt) => total 30 points
+![](Assets/9.PNG)
+> ftp://192.168.1.10 -> Flag.txt (10 pt) => total 30 points
 
 #### 13. ssh 192.168.1.10 22
 ![](Assets/17.PNG)
