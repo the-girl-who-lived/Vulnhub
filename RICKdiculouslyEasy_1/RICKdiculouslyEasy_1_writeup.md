@@ -104,6 +104,7 @@ It's designed to be a beginner ctf, if you're new to pen testing, check it out!
 > Worked for user 'Summer'
 
 > Got flag (10 pt) => total 50 points
+
 ![](Assets/21.PNG)
 > password for unzipping journal.txt.zip is in safe_password.jpg
 
