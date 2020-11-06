@@ -112,7 +112,7 @@ It's designed to be a beginner ctf, if you're new to pen testing, check it out!
 > Pull jpg file in host machine
 
 ![](Assets/23.PNG)
-> Got safe password
+> Got safe password -> Meeseek
 
 ![](Assets/24.PNG)
 > Got Flag (20 pt) => total 70 points
